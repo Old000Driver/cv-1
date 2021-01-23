@@ -2,13 +2,61 @@
 <html lang="zh-CN">
 <head>
    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0,
+   maximum-scale=1.0, user-scalable=no">
    <meta http-equiv="X-UA-Compatible" content="le=edge">
    <title>老子的简历</title>
 </head>
 <body>
     <style id="style"></style>
-    <span id="demo"></span>
+    <div id="html"></div>
+    <div id="div1Wrapper">
+        <div id="div1"></div>
+    </div>
+    
+    <style>*{margin: 0;padding: 0;}
+        *{box-sizing: border-box;}
+        *::after{box-sizing: border-box;}
+        *::before{box-sizing: border-box;}
+
+        #demo{
+            word-break: break-all;
+        }
+
+        #div1{
+            position: fixed;
+            bottom: 50%;
+            left: 25%;
+        }
+
+        #div1::before{
+            content: ''; 
+            display: block;
+            position: absolute;
+        }
+
+        #div1::after{
+            content: ''; 
+            display: block;
+            position: absolute;
+        }
+
+        @media (max-width:500px) {
+            #html {
+                height: 50vh;
+                overflow: auto;
+            }
+
+            #div1Wrapper {
+                height: 50vh;
+            }
+
+            #div1 {
+                position: relative;
+                top: 0;
+                right: 0;
+            }
+        }</style>
     <script src="/main.1f19ae8e.js"></script>
 </body>
 </html>
